@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: vanta_modifier
+label: 'Vanta Modifier'
+icon_uuid: null
+icon_default: null
+description: 'Modify the content to have a 3D animated digital art.'
+behavior_plugins: {  }

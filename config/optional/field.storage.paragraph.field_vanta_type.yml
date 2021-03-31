@@ -1,0 +1,62 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_vanta_type
+field_name: field_vanta_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: BIRDS
+      label: Birds
+    -
+      value: CELLS
+      label: Cells
+    -
+      value: CLOUDS
+      label: Clouds
+    -
+      value: CLOUDS2
+      label: Clouds2
+    -
+      value: DOTS
+      label: Dots
+    -
+      value: FOG
+      label: Fog
+    -
+      value: GLOBE
+      label: Globe
+    -
+      value: HALO
+      label: Halo
+    -
+      value: NET
+      label: Net
+    -
+      value: RINGS
+      label: Rings
+    -
+      value: RIPPL
+      label: Rippl
+    -
+      value: TOPOL
+      label: Topol
+    -
+      value: TRUNK
+      label: Trunk
+    -
+      value: WAVES
+      label: Waves
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

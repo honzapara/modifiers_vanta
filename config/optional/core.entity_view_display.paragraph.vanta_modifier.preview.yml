@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.vanta_modifier.field_vanta_config
+    - field.field.paragraph.vanta_modifier.field_vanta_media_query
+    - field.field.paragraph.vanta_modifier.field_vanta_type
+    - paragraphs.paragraphs_type.vanta_modifier
+id: paragraph.vanta_modifier.preview
+targetEntityType: paragraph
+bundle: vanta_modifier
+mode: preview
+content:
+  field_vanta_media_query:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_vanta_config: true
+  field_vanta_type: true

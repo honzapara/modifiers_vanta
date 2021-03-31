@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vanta_config
+    - paragraphs.paragraphs_type.vanta_modifier
+id: paragraph.vanta_modifier.field_vanta_config
+field_name: field_vanta_config
+entity_type: paragraph
+bundle: vanta_modifier
+label: Config
+description: 'The Vanta JSON configuration object without the "el" property.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

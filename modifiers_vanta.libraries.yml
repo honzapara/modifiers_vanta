@@ -1,0 +1,27 @@
+vanta:
+  remote: https://github.com/tengbao/vanta
+  version: 0.5.21
+  license:
+    name: MIT
+    url: https://github.com/tengbao/vanta/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    /libraries/vanta/vendor/three.r119.min.js: {}
+    /libraries/vanta/dist/vanta.birds.min.js: {}
+    /libraries/vanta/dist/vanta.cells.min.js: {}
+    /libraries/vanta/dist/vanta.clouds.min.js: {}
+    /libraries/vanta/dist/vanta.clouds2.min.js: {}
+    /libraries/vanta/dist/vanta.dots.min.js: {}
+    /libraries/vanta/dist/vanta.fog.min.js: {}
+    /libraries/vanta/dist/vanta.globe.min.js: {}
+    /libraries/vanta/dist/vanta.halo.min.js: {}
+    /libraries/vanta/dist/vanta.net.min.js: {}
+    /libraries/vanta/dist/vanta.rings.min.js: {}
+    /libraries/vanta/dist/vanta.ripple.min.js: {}
+    /libraries/vanta/dist/vanta.topology.min.js: {}
+    /libraries/vanta/dist/vanta.trunk.min.js: {}
+    /libraries/vanta/dist/vanta.waves.min.js: {}
+
+apply:
+  js:
+    js/modifiers_vanta.apply.js: {}
