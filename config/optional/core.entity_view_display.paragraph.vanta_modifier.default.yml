@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.vanta_modifier.field_vanta_config
-    - field.field.paragraph.vanta_modifier.field_vanta_media_query
+    - field.field.paragraph.vanta_modifier.field_media_query
     - field.field.paragraph.vanta_modifier.field_vanta_type
     - paragraphs.paragraphs_type.vanta_modifier
   module:
@@ -20,7 +20,7 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
-  field_vanta_media_query:
+  field_media_query:
     weight: 4
     label: inline
     settings:

@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.vanta_modifier.field_vanta_config
-    - field.field.paragraph.vanta_modifier.field_vanta_media_query
+    - field.field.paragraph.vanta_modifier.field_media_query
     - field.field.paragraph.vanta_modifier.field_vanta_type
     - paragraphs.paragraphs_type.vanta_modifier
 id: paragraph.vanta_modifier.default
@@ -19,7 +19,7 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_vanta_media_query:
+  field_media_query:
     weight: 4
     settings:
       size: 60

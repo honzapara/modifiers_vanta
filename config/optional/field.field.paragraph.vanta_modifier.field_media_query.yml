@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_vanta_media_query
+    - field.storage.paragraph.field_media_query
     - paragraphs.paragraphs_type.vanta_modifier
-id: paragraph.vanta_modifier.field_vanta_media_query
-field_name: field_vanta_media_query
+id: paragraph.vanta_modifier.field_media_query
+field_name: field_media_query
 entity_type: paragraph
 bundle: vanta_modifier
 label: 'Media Query'
