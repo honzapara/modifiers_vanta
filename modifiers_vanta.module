@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Vanta Modifier module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Serialization\Yaml;
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function modifiers_vanta_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if (isset($element['#paragraph_type'])
+    && $element['#paragraph_type'] == 'vanta_modifier'
+    && isset($element['subform']['field_vanta_config'])
+  ) {
+    // Validate Vanta config YAML format.
+    $element['subform']['field_vanta_config']['widget']['#element_validate'][] = '_modifiers_vanta_config_validate';
+  }
+}
+
+/**
+ * Validates Vanta config form value.
+ */
+function _modifiers_vanta_config_validate(&$element, FormStateInterface $form_state, &$complete_form) {
+  $value = $form_state->getValue($element[0]['value']['#parents']);
+  if (!empty($value)) {
+
+    // Strip whitespaces and final comma.
+    $lines = explode(PHP_EOL, $value);
+    array_walk($lines, function (&$value) {
+      $value = rtrim(trim($value), ',');
+    });
+    // Set cleaned value back to form.
+    $value = implode(PHP_EOL, $lines);
+    $form_state->setValue($element[0]['value']['#parents'], $value);
+
+    // Show error if string is not formatted correctly.
+    try {
+      Yaml::decode($value);
+    }
+    catch (\Exception $e) {
+      $form_state->setError($element, t('YAML is not formatted correctly: @message', [
+        '@message' => $e->getMessage(),
+      ]));
+    }
+  }
+}
