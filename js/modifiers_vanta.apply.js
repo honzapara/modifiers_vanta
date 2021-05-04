@@ -13,29 +13,23 @@
     if (!element) {
       return;
     }
+    config.config.el = element;
 
-    toggleVanta(element, media, config);
+    toggle(element, media, config);
 
     window.addEventListener('resize', function () {
-      toggleVanta(element, media, config);
+      toggle(element, media, config);
     });
 
-    function toggleVanta(element, media, config) {
+    function toggle(element, media, config) {
 
-      // TODO: Color returns error.
-      var vantaConfig = {};
-      config.config.split(/\r?\n/).forEach(function (line) {
-        var parts = line.match(/(\S+)\s*:\s*([^\s,]+)/);
-        vantaConfig[parts[1]] = parts[2].valueOf();
-      });
-      vantaConfig.el = element;
+      var effects = element.querySelectorAll('.vanta-canvas');
+      effects.forEach(e => e.remove());
 
-      var effect = VANTA[config.effect](vantaConfig);
-
-      // TODO: destroy() function is not working.
-      if (!window.matchMedia(media).matches) {
-        effect.destroy();
+      if (window.matchMedia(media).matches) {
+        VANTA[config.type](config.config);
       }
+
     }
 
   };

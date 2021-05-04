@@ -30,7 +30,7 @@ Optionally you can set media queries.
    "version": "0.5.21",
    "dist": {
     "type": "zip",
-    "url": "https://github.com/tengbao/vanta/archive/refs/heads/master.zip"
+    "url": "https://github.com/tengbao/vanta/archive/9b62dcf55b58019b6662e8e9b83d8cec78f04a03.zip"
    },
    "require": {
     "composer/installers": "~1.0"
@@ -52,10 +52,6 @@ Optionally you can set media queries.
 ```
 composer require tengbao/vanta
 ```
-
-### Optional steps for better user experience
-1. Use a paragraph Preview view mode on Form display.
-2. Use Media Library module for easier creation and selection of media assets.
 
 ## MAINTAINERS
 This module is maintained by developers at Morpht. For more information on
