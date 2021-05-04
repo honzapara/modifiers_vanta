@@ -1,25 +1,61 @@
-vanta:
-  remote: https://github.com/tengbao/vanta
-  version: 0.5.21
+threejs:
+  remote: https://github.com/mrdoob/three.js
+  version: 127
   license:
     name: MIT
-    url: https://github.com/tengbao/vanta/blob/master/LICENSE.md
+    url: https://github.com/mrdoob/three.js/blob/dev/LICENSE
     gpl-compatible: true
   js:
     /libraries/vanta/vendor/three.r119.min.js: {}
+
+#vanta:
+#  remote: https://github.com/tengbao/vanta
+#  version: 0.5.21
+#  license:
+#    name: MIT
+#    url: https://github.com/tengbao/vanta/blob/master/LICENSE.md
+#    gpl-compatible: true
+vanta_birds:
+  js:
     /libraries/vanta/dist/vanta.birds.min.js: {}
+vanta_cells:
+  js:
     /libraries/vanta/dist/vanta.cells.min.js: {}
+vanta_clouds:
+  js:
     /libraries/vanta/dist/vanta.clouds.min.js: {}
+vanta_clouds2:
+  js:
     /libraries/vanta/dist/vanta.clouds2.min.js: {}
+vanta_dots:
+  js:
     /libraries/vanta/dist/vanta.dots.min.js: {}
+vanta_fog:
+  js:
     /libraries/vanta/dist/vanta.fog.min.js: {}
+vanta_globe:
+  js:
     /libraries/vanta/dist/vanta.globe.min.js: {}
+vanta_halo:
+  js:
     /libraries/vanta/dist/vanta.halo.min.js: {}
+vanta_net:
+  js:
     /libraries/vanta/dist/vanta.net.min.js: {}
+vanta_rings:
+  js:
     /libraries/vanta/dist/vanta.rings.min.js: {}
+vanta_ripple:
+  js:
     /libraries/vanta/dist/vanta.ripple.min.js: {}
+vanta_topology:
+  js:
     /libraries/vanta/dist/vanta.topology.min.js: {}
+vanta_trunk:
+  js:
     /libraries/vanta/dist/vanta.trunk.min.js: {}
+vanta_waves:
+  js:
     /libraries/vanta/dist/vanta.waves.min.js: {}
 
 apply:
