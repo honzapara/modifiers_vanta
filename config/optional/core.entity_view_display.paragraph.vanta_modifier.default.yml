@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.vanta_modifier.field_vanta_config
     - field.field.paragraph.vanta_modifier.field_media_query
+    - field.field.paragraph.vanta_modifier.field_vanta_config
     - field.field.paragraph.vanta_modifier.field_vanta_type
     - paragraphs.paragraphs_type.vanta_modifier
   module:
@@ -13,13 +13,6 @@ targetEntityType: paragraph
 bundle: vanta_modifier
 mode: default
 content:
-  field_vanta_config:
-    weight: 2
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_media_query:
     weight: 4
     label: inline
@@ -27,6 +20,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_vanta_config:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_vanta_type:
     weight: 1

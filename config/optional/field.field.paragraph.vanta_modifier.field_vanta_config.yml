@@ -9,7 +9,7 @@ field_name: field_vanta_config
 entity_type: paragraph
 bundle: vanta_modifier
 label: Config
-description: 'The Vanta JSON configuration object without the "el" property.'
+description: 'The Vanta configuration properties in YAML without the "el" property.'
 required: false
 translatable: false
 default_value: {  }

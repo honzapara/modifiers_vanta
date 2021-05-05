@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
-    - field.field.paragraph.vanta_modifier.field_vanta_config
     - field.field.paragraph.vanta_modifier.field_media_query
+    - field.field.paragraph.vanta_modifier.field_vanta_config
     - field.field.paragraph.vanta_modifier.field_vanta_type
     - paragraphs.paragraphs_type.vanta_modifier
   module:

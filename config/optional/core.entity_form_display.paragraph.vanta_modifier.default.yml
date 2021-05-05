@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.vanta_modifier.field_vanta_config
     - field.field.paragraph.vanta_modifier.field_media_query
+    - field.field.paragraph.vanta_modifier.field_vanta_config
     - field.field.paragraph.vanta_modifier.field_vanta_type
     - paragraphs.paragraphs_type.vanta_modifier
 id: paragraph.vanta_modifier.default
@@ -11,14 +11,6 @@ targetEntityType: paragraph
 bundle: vanta_modifier
 mode: default
 content:
-  field_vanta_config:
-    weight: 2
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_media_query:
     weight: 4
     settings:
@@ -26,6 +18,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_vanta_config:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_vanta_type:
     weight: 1
