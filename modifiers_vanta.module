@@ -5,8 +5,42 @@
  * Vanta Modifier module.
  */
 
+use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Serialization\Yaml;
+
+/**
+ * Implements hook_help().
+ */
+function modifiers_vanta_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.modifiers_vanta':
+      $output = '';
+      $output .= '<p>';
+      $output .= t('Vanta Modifier is a modifier that can allow to apply animated website background to entities (Nodes, Blocks, Paragraphs, Users, etc). Vanta is based on 3rd party library ' . '<a href="https://www.vantajs.com/">Vanta.js.</a>');
+      $output .= '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<p>' . t('In order to use Vanta Modifier you need to have <a href="https://www.drupal.org/project/modifiers">Modifiers</a> module enabled. How to set Modifiers can be found in the documentation of the module.') . '</p>';
+      $output .= '<p>' . t('Vanta Modifier contains Config field, Type field and Media Query filed.') . '</p>';
+      $output .= '<h4>' . t('Type') . '</h4>';
+      $output .= '<p>' . t('This field is the type of the effect. Various types be found on Vanta.js example page. ') . '</p>';
+      $output .= '<p>' . t('<strong>Example</strong>') . '</p>';
+      $output .= '<prev>' . t('BIRDS') . '</prev>';
+      $output .= '<h4>' . t('Config') . '</h4>';
+      $output .= '<p>' . t('Configuration should be coppied from Vanta.js JSON object without "el".</ br> Simply go to <a href="https://www.vantajs.com/">https://www.vantajs.com</a>, select the effect and the code should be generated for you.') . '</p>';
+      $output .= '<p>' . t('<strong>Example</strong>') . '</p>';
+      $output .= '<prev>' . t('mouseControls: true,</ br>
+touchControls: true,</ br>
+gyroControls: false,</ br>
+minHeight: 200.00,</ br>
+minWidth: 200.00,</ br>
+scale: 1.00,</ br>
+scaleMobile: 1.00') . '</prev>';
+      $output .= '<h4>' . t('Media Query') . '</h4>';
+      $output .= '<p>' . t('This field allows you to specify the view port in which should be the effect triggered. ') . '</p>';
+      return $output;
+  }
+}
 
 /**
  * Implements hook_field_widget_form_alter().
