@@ -1,0 +1,14 @@
+{
+  "name": "drupal/modifiers_vanta",
+  "description": "This module provides animated backgrounds for your components.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/modifiers_vanta",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/modifiers_vanta",
+    "source": "https://github.com/morpht/modifiers_vanta"
+  },
+  "require": {
+    "drupal/modifiers": "~1.4"
+  }
+}
