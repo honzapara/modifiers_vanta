@@ -1,10 +1,17 @@
-# Vanta Modifier
+# VANTA MODIFIER
 
 ## INTRODUCTION
 
 This module provides animated backgrounds for your components.
 
 Optionally you can set media queries.
+
+## REQUIREMENTS
+This module requires the following modules:
+* [Modifiers](https://www.drupal.org/project/modifiers)
+* [Paragraphs](https://www.drupal.org/project/paragraphs)
+
+and [Vanta.js](https://github.com/tengbao/vanta) library.
 
 ## INSTALLATION
 1. The module can be installed via the
@@ -52,6 +59,10 @@ Optionally you can set media queries.
 ```
 composer require tengbao/vanta
 ```
+
+## CONFIGURATION
+The module has no menu or modifiable settings. There is no configuration. When
+enabled, the module will install a new paragraphs type which you need to reference from field_modifiers which can be created on the various entities (paragraphs, block, node). More information about the setup can be found [here](https://www.drupal.org/docs/8/modules/modifiers/quick-start).
 
 ## MAINTAINERS
 This module is maintained by developers at Morpht. For more information on
