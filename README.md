@@ -21,12 +21,12 @@ and [Vanta.js](https://github.com/tengbao/vanta) library.
    Paragraph) or onto a field on a Look.
 4. Install required library by one of these 2 options:
 
-### A. Library installation (manual)
+### A. LIBRARY INSTALLATION (MANUAL)
 1. Download [Vanta](https://github.com/tengbao/vanta) library
    (version 0.5.21 is recommended).
 2. Place unpacked library in your libraries folder.
 
-### B. Library installation (composer)
+### B. LIBRARY INSTALLATION (COMPOSER)
 1. Copy the following into your project's composer.json file.
 ```
 "repositories": [
